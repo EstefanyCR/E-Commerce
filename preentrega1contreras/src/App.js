@@ -1,12 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
-import BarraNavegacion from "./Components/navbar.jsx";
-import ContenedorItems from "./Components/listaitems.jsx";
+import NavBar from "./Components/BarraNav/NavBar.jsx";
+import ContenedorItems from "./Components/ItemsList/ItemsList";
 
 function App() {
   return (
     <div className="App">
-      <BarraNavegacion />
+      <NavBar />
       <header className="App-header"></header>
       <ContenedorItems />
     </div>

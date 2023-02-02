@@ -1,5 +1,5 @@
-import "../Components/listaItems.css";
-const nombres = ["Laura", "Victoria", "David", "Janeth"];
+import "../ItemsList/ItemsList.css";
+const nombres = ["Javier", "Victoria", "David", "Janeth"];
 
 export default function ContenedorItems() {
   return (

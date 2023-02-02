@@ -1,9 +1,9 @@
 import { useState } from "react";
-import "../Components/navbar.css";
-import CarritoImg from "../Components/CartWidget.jsx";
-import image from "../Components/mixup.png";
+import "../BarraNav/NavBar.css";
+import CarritoImg from "../CartWidget/CartWidget";
+import image from "../mixup.png";
 
-export default function BarraNavegacion() {
+export default function NavBar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   return (
