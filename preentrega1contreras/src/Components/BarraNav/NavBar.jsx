@@ -1,57 +1,86 @@
-import { useState } from "react";
-import "../BarraNav/NavBar.css";
+import React, { useState } from "react";
+import { Container, Nav, Navbar, NavLink } from "react-bootstrap";
+
 import CarritoImg from "../CartWidget/CartWidget";
+import Search from "../SerchWiget/SerchW";
+import IconUser from "../UserWidget/UserW";
 import image from "../mixup.png";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
-  const [isNavExpanded, setIsNavExpanded] = useState(false);
-
   return (
-    <nav className="navigation">
-      <a href="#" className="brand-name">
-        <img src={image} />
-      </a>
-      <button
-        className="hamburger"
-        onClick={() => {
-          setIsNavExpanded((currentIsNavExpanded) => !currentIsNavExpanded);
-        }}
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
-          />
-        </svg>
-      </button>
-      <div
-        className={
-          isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
-        }
-      >
-        <ul>
-          <li>
-            <a href="/home">Home</a>
-          </li>
-          <li>
-            <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <div className="iconoCarrito">
-        <CarritoImg />
-      </div>
-    </nav>
+    <Navbar bg="light" expand="lg" style={{ maxHeight: "75px" }}>
+      <Container>
+        <Navbar.Brand>
+          <Link to="/">
+            <img src={image} alt="Logo mixup" style={{ maxHeight: "50px" }} />
+          </Link>
+        </Navbar.Brand>
+
+        <Navbar.Toggle />
+
+        <Navbar.Collapse>
+          <Nav className="me-auto">
+            <NavLink>
+              <Link to="/musica" style={{ textDecoration: "none" }}>
+                Musica
+              </Link>
+            </NavLink>
+
+            <NavLink>
+              <Link to="/pelisyseries" style={{ textDecoration: "none" }}>
+                Peliculas y Series
+              </Link>
+            </NavLink>
+
+            <NavLink>
+              <Link to="/gaming" style={{ textDecoration: "none" }}>
+                Gaming
+              </Link>
+            </NavLink>
+
+            <NavLink>
+              <Link to="/audio" style={{ textDecoration: "none" }}>
+                Audio
+              </Link>
+            </NavLink>
+
+            <NavLink>
+              <Link to="/coleccionables" style={{ textDecoration: "none" }}>
+                Coleccionables
+              </Link>
+            </NavLink>
+
+            <NavLink>
+              <Link to="/moda" style={{ textDecoration: "none" }}>
+                Moda
+              </Link>
+            </NavLink>
+
+            <NavLink>
+              <Link to="/electronicos" style={{ textDecoration: "none" }}>
+                Electronicos
+              </Link>
+            </NavLink>
+
+            <NavLink>
+              <Link to="/libros" style={{ textDecoration: "none" }}>
+                Libros
+              </Link>
+            </NavLink>
+
+            <NavLink>
+              <Link to="/soporte" style={{ textDecoration: "none" }}>
+                Soporte
+              </Link>
+            </NavLink>
+
+            <NavLink>
+              <CarritoImg />
+            </NavLink>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }

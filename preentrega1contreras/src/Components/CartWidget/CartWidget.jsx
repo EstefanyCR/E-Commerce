@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import "../CartWidget/CartWidget.css";
 
 export default function Carrito() {
   return (
-    <button>
+    <button className="carrito">
       <AiOutlineShoppingCart />
-      <span>Carrito 1</span>
+      <span>1</span>
     </button>
   );
 }
