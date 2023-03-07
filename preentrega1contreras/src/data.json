@@ -3,169 +3,168 @@
         "id":"1",
         "nombre": "Harry's House",
         "descripcion":"Lorem Ipsum is simply dummy text ",
-        "precio": "$0000.00",
+        "precio": 90,
         "categoria": "musica",
-        "stock": true,
-        "imagen": "https://i.pinimg.com/564x/33/87/ce/3387ced8403dcf862d57ecb99ae44018.jpg" 
+        "stock": true
     },
 
     {
         "id":"2",
         "nombre": "Pop/stars",
         "descripcion":"Lorem Ipsum is simply dummy text",
-        "precio": "$0000.00",
+        "precio": 128,
         "categoria": "musica",
-        "stock": true,
-        "imagen": "https://i.pinimg.com/564x/33/87/ce/3387ced8403dcf862d57ecb99ae44018.jpg" 
+        "stock": true   
     },
 
     {
         "id":"3",
         "nombre": "No Money",
         "descripcion":"Lorem Ipsum is simply dummy text ",
-        "precio": "$0000.00",
+        "precio": 16,
         "categoria": "musica",
-        "stock": true,
-        "imagen": "https://i.pinimg.com/564x/33/87/ce/3387ced8403dcf862d57ecb99ae44018.jpg" 
+        "stock": true
+    },
+
+    {
+        "id":"17",
+        "nombre": "Disco 4",
+        "descripcion":"Lorem Ipsum is simply dummy text ",
+        "precio": 24,
+        "categoria":"musica",
+        "stock":true
+    },
+
+    {
+        "id":"18",
+        "nombre": "Disco 5",
+        "descripcion":"Lorem Ipsum is simply dummy text ",
+        "precio": 161,
+        "categoria":"musica",
+        "stock":true
     },
 
     {
         "id":"4",
         "nombre": "Lightyear",
         "descripcion":"Lorem Ipsum is simply dummy text",
-        "precio": "$0000.00",
+        "precio": 51,
         "categoria": "pelisyseries",
-        "stock": true,
-        "imagen": "https://i.pinimg.com/564x/33/87/ce/3387ced8403dcf862d57ecb99ae44018.jpg" 
+        "stock": true
     },
 
     {
         "id":"5",
         "nombre": "Como entrenar a tu dragon",
         "descripcion":"Lorem Ipsum is simply dummy text ",
-        "precio": "$0000.00",
+        "precio": 104,
         "categoria": "pelisyseries",
-        "stock": true,
-        "imagen": "https://i.pinimg.com/564x/33/87/ce/3387ced8403dcf862d57ecb99ae44018.jpg" 
+        "stock": true
     },
 
     {
         "id":"6",
         "nombre": "Moana",
         "descripcion":"Lorem Ipsum is simply dummy text",
-        "precio": "$0000.00",
+        "precio": 55,
         "categoria": "pelisyseries",
-        "stock": true,
-        "imagen": "https://i.pinimg.com/564x/33/87/ce/3387ced8403dcf862d57ecb99ae44018.jpg" 
+        "stock": true
     },
     
     {
         "id":"7",
         "nombre": "Juego 1",
         "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-        "precio": "$0000.00",
+        "precio": 2,
         "categoria": "gaming",
-        "stock": true,
-        "imagen": "https://i.pinimg.com/564x/33/87/ce/3387ced8403dcf862d57ecb99ae44018.jpg" 
+        "stock": true
     },
     
     {
         "id":"8",
         "nombre": "Juego 2",
         "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-        "precio": "$0000.00",
+        "precio": 82,
         "categoria": "gaming",
-        "stock": true,
-        "imagen": "https://i.pinimg.com/564x/33/87/ce/3387ced8403dcf862d57ecb99ae44018.jpg" 
+        "stock": true 
     },
 
     {
         "id":"9",
         "nombre": "Consola 1",
         "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-        "precio": "$0000.00",
+        "precio": 166,
         "categoria": "gaming",
-        "stock": true,
-        "imagen": "https://i.pinimg.com/564x/33/87/ce/3387ced8403dcf862d57ecb99ae44018.jpg" 
+        "stock": true
     },
 
     {
         "id":"10",
         "nombre": "Bocinas 1",
         "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-        "precio": "$0000.00",
+        "precio": 61,
         "categoria": "audio",
-        "stock": true,
-        "imagen": "https://i.pinimg.com/564x/33/87/ce/3387ced8403dcf862d57ecb99ae44018.jpg" 
+        "stock": true 
     },
 
     {
         "id":"11",
         "nombre": "Audifonos 1",
         "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-        "precio": "$0000.00",
+        "precio": 103,
         "categoria": "audio",
-        "stock": true,
-        "imagen": "https://i.pinimg.com/564x/33/87/ce/3387ced8403dcf862d57ecb99ae44018.jpg" 
+        "stock": true 
     },
 
     {
         "id":"12",
         "nombre": "Bocinas 2",
         "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-        "precio": "$0000.00",
+        "precio": 139,
         "categoria": "audio",
-        "stock": true,
-        "imagen": "https://i.pinimg.com/564x/33/87/ce/3387ced8403dcf862d57ecb99ae44018.jpg" 
+        "stock": true 
     },
 
     {
         "id":"13",
         "nombre": "Rompecabezas",
         "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-        "precio": "$0000.00",
+        "precio": 185,
         "categoria": "coleccionable",
-        "stock": true,
-        "imagen": "https://i.pinimg.com/564x/33/87/ce/3387ced8403dcf862d57ecb99ae44018.jpg" 
+        "stock": true 
     },
 
     {
         "id":"14",
         "nombre": "Playera 1",
         "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-        "precio": "$0000.00",
+        "precio": 145,
         "categoria": "moda",
-        "stock": true,
-        "imagen": "https://i.pinimg.com/564x/33/87/ce/3387ced8403dcf862d57ecb99ae44018.jpg" 
+        "stock": true 
     },
 
     {
         "id":"15",
         "nombre": "Celular 1",
         "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-        "precio": "$0000.00",
+        "precio": 155,
         "categoria": "electronicos",
-        "stock": true,
-        "imagen": "https://i.pinimg.com/564x/33/87/ce/3387ced8403dcf862d57ecb99ae44018.jpg" 
+        "stock": true 
     },
 
     {
         "id":"16",
         "nombre": "Libro 1!",
         "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-        "precio": "$0000.00",
+        "precio": 50,
         "categoria": "libros",
-        "stock": true,
-        "imagen": "https://i.pinimg.com/564x/33/87/ce/3387ced8403dcf862d57ecb99ae44018.jpg" 
+        "stock": true 
     },
 
     {
         "id":"preguntasfrec",
         "nombre": "Preguntas Frecuentes",
         "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-        "precio": "$0000.00",
-        "categoria": "soporte",
-        "stock": true,
-        "imagen": "https://i.pinimg.com/564x/33/87/ce/3387ced8403dcf862d57ecb99ae44018.jpg" 
+        "categoria": "soporte"
     }
 ]

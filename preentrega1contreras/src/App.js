@@ -7,13 +7,17 @@ import Menu from "./Components/Menu";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import CartContextProvider from "./Context/CartContextProvider";
+import CartList from "./Components/CartWidget/CartList";
+import Buyer from "./Components/CompraFinalizar/Buyer";
+import CompraFinalizada from "./Components/CompraFinalizar/CompraFinalizada";
 
 const categorias = [
   { id: "musica", nombre: "Musica" },
   { id: "pelisyseries", nombre: "Peliculas y Series" },
   { id: "gaming", nombre: "Gaming" },
   { id: "audio", nombre: "Audio" },
-  { id: "coleccionables", nombre: "Coleccionables" },
+  { id: "coleccionable", nombre: "Coleccionable" },
   { id: "moda", nombre: "Moda" },
   { id: "electronicos", nombre: "Electronicos" },
   { id: "libros", nombre: "Libros" },
@@ -22,19 +26,34 @@ const categorias = [
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <NavBar categorias={categorias} />
+    <CartContextProvider>
+      <div className="App">
+        <BrowserRouter>
+          <NavBar categorias={categorias} />
 
-        <Routes>
-          <Route exact path="/" element={<Menu />} />
+          <Routes>
+            <Route exact path="/" element={<Menu />} />
 
-          <Route exact path="/:categoria" element={<ItemsListContainer />} />
+            <Route exact path="/:categoria" element={<ItemsListContainer />} />
 
-          <Route exact path="/:categoria/:itemId" element={<ItemDetalles />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+            <Route
+              exact
+              path="/:categoria/:itemId"
+              element={<ItemDetalles />}
+            />
+
+            <Route exact path="/cart" element={<CartList />} />
+
+            <Route exact path="/comprador" element={<Buyer />} />
+            <Route
+              exact
+              path="/confirmacion/:compraId"
+              element={<CompraFinalizada />}
+            />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </CartContextProvider>
   );
 }
 

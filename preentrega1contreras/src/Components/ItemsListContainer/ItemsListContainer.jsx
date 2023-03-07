@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 
-import { fetchs } from "../../fetchs";
-import data from "../../data.json";
 import "./ItemsList.css";
 import ItemCard from "../ItemCard/ItemCard";
+import { db } from "../../firebaseConfig/firebaseConfig";
+import { collection, query, where, getDocs } from "firebase/firestore";
+import { async } from "@firebase/util";
 
 export default function ItemsListContainer() {
   const { categoria } = useParams();
@@ -14,12 +15,19 @@ export default function ItemsListContainer() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetchs(data)
-      .then((items) => setItems(items))
-      .catch((e) => setError(e));
+    const getItems = async () => {
+      const q = query(collection(db, "items"));
+      const querySnapshot = await getDocs(q);
+      const docs = [];
+      querySnapshot.forEach((doc) => {
+        docs.push({ ...doc.data(), id: doc.id });
+      });
+      setItems(docs);
+    };
+    getItems();
   }, []);
 
-  const items1 = items.filter((item) => item.categoria === categoria);
+  const categoryItems = items.filter((item) => item.categoria === categoria);
 
   if (error) {
     return <p>{error}</p>;
@@ -28,13 +36,14 @@ export default function ItemsListContainer() {
   return (
     <Container>
       <Row>
-        {items1.map((item) => (
+        {categoryItems.map((item) => (
           <Col>
             <ItemCard
               id={item.id}
               nombre={item.nombre}
               descripcion={item.descripcion}
               precio={item.precio}
+              imagen={item.image}
             />
           </Col>
         ))}

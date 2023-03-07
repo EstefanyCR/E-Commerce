@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container, Nav, Navbar, NavLink } from "react-bootstrap";
 import "../BarraNav/NavBar.css";
 
@@ -6,7 +6,7 @@ import CarritoImg from "../CartWidget/CartWidget";
 import Search from "../SerchWiget/SerchW";
 import IconUser from "../UserWidget/UserW";
 import image from "../mixup.png";
-import { Link } from "react-router-dom";
+import { NavLink as RouterNavLink, Link } from "react-router-dom";
 
 export default function NavBar({ categorias }) {
   return (
@@ -23,11 +23,9 @@ export default function NavBar({ categorias }) {
         <Navbar.Collapse>
           <Nav className="me-auto">
             {categorias.map(({ nombre, id }) => (
-              <NavLink>
-                <Link to={id} className="link-nav">
-                  {nombre}
-                </Link>
-              </NavLink>
+              <RouterNavLink key={id} to={id} className="link-nav">
+                {nombre}
+              </RouterNavLink>
             ))}
           </Nav>
 

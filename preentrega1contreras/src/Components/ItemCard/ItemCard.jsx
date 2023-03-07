@@ -1,11 +1,14 @@
 import { Button, Card } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../ItemCard/itemCard.css";
+import image from "../imageDefault.jpg";
 
-export default function ItemCard({ id, nombre, descripcion, precio }) {
+export default function ItemCard({ id, nombre, descripcion, precio, imagen }) {
+  const navigate = useNavigate();
+
   return (
     <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src="data.js/100px180" />
+      <Card.Img variant="top" src={imagen} />
       <Card.Body>
         <Card.Title>
           <Link to={`${id}`} className="link-card">
@@ -15,7 +18,14 @@ export default function ItemCard({ id, nombre, descripcion, precio }) {
         </Card.Title>
         <Card.Text>{descripcion}</Card.Text>
         <Card.Footer>{precio}</Card.Footer>
-        <Button variant="primary">Añadir al carrito</Button>
+        <Button
+          onClick={() => {
+            navigate(id);
+          }}
+          variant="primary"
+        >
+          Ver mas
+        </Button>
       </Card.Body>
     </Card>
   );

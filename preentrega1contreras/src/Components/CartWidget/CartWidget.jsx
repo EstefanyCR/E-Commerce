@@ -1,12 +1,23 @@
-import { useState } from "react";
+import { useContext } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import { CartContext } from "../../Context/cartContext";
+
 import "../CartWidget/CartWidget.css";
+import { Link } from "react-router-dom";
 
 export default function Carrito() {
+  const { getItemsCount } = useContext(CartContext);
+
+  const itemCount = getItemsCount();
+
   return (
-    <button className="carrito">
-      <AiOutlineShoppingCart />
-      <span>1</span>
-    </button>
+    <>
+      {itemCount ? (
+        <Link to="/cart" className="carrito">
+          <AiOutlineShoppingCart />
+          <span>{itemCount}</span>
+        </Link>
+      ) : null}
+    </>
   );
 }
