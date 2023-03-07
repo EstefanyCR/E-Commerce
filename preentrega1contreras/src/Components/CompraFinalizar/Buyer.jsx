@@ -10,6 +10,7 @@ import { db } from "../../firebaseConfig/firebaseConfig";
 function Buyer() {
   const { carritoItems, getTotalPriceItems } = useContext(CartContext);
   const navigate = useNavigate();
+  const [isEmailVerified, setIsEmailVerified] = useState(true);
 
   const nombreRef = useRef(null);
   const emailRef = useRef(null);
@@ -51,7 +52,7 @@ function Buyer() {
 
           navigate(`/confirmacion/${newCompraRef.id}`);
         }}
-        className="container"
+        className="cont"
       >
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Nombre</Form.Label>
@@ -74,6 +75,19 @@ function Buyer() {
             ref={emailRef}
           />
         </Form.Group>
+
+        <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Form.Label>Verificación e-mail</Form.Label>
+          <Form.Control
+            type="email"
+            placeholder="Vuelva a introducir e-mail"
+            required
+            onChange={(event) => {
+              setIsEmailVerified(emailRef.current.value === event.target.value);
+            }}
+          />
+        </Form.Group>
+        {!isEmailVerified ? <p>No son iguales</p> : null}
 
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Numero de telefono</Form.Label>
@@ -101,6 +115,7 @@ function Buyer() {
               );
             })}
           </div>
+          <p></p>
           <button type="submit">Completar la compra</button>
         </div>
       </Form>

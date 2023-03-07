@@ -1,0 +1,27 @@
+.imag{
+    max-width: 300px;
+}
+
+.cant{
+    border-radius: 0.5rem;
+    border-color: #0EACE6;
+    width: 100px;
+}
+
+button{
+    border-radius: 1rem;
+    padding: 5px 10px 5px 10px;
+    background-color: #0EACE6;
+    border-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+
+.datos{
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    margin: 20px;
+}

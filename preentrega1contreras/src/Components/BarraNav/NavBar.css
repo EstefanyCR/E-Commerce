@@ -1,4 +1,16 @@
 .link-nav{
     text-decoration: none;
     margin-right: 2rem;
+    margin-left: 3rem;
+    color: black;
 }
+
+.nav{
+    max-height: 75px;
+    background: linear-gradient(#0EACE6, rgb(255, 255, 255));
+}
+
+.imagen{
+    max-width: 70px;
+}
+

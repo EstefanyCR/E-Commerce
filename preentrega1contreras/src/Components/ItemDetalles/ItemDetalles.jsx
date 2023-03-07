@@ -1,8 +1,9 @@
 import { useContext, useEffect, useRef, useState } from "react";
-import { Navigate, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { CartContext } from "../../Context/cartContext";
 import { db } from "../../firebaseConfig/firebaseConfig";
 import { collection, query, getDocs } from "firebase/firestore";
+import "../ItemDetalles/ItemDetalles.css";
 
 export default function ItemDetalles() {
   const { addItem, isInCart } = useContext(CartContext);
@@ -33,14 +34,26 @@ export default function ItemDetalles() {
     <div>
       {item ? (
         <>
-          <p>{item.nombre}</p>
-          <p>{item.descripcion}</p>
-          <p>{item.precio}</p>
-          <p>{item.categoria}</p>
+          <div className="datos">
+            <img src={item.image} className="imag" alt="" />
+            <p>{item.nombre}</p>
+            <p>{item.descripcion}</p>
+            <p>{item.precio} </p>
+            <p>{item.categoria}</p>
+
+            <p>{item.stock}</p>
+          </div>
 
           <div>
-            <input type="number" ref={cantidadRef} min={0} />
+            <input
+              type="number"
+              ref={cantidadRef}
+              min={0}
+              className="cant"
+              max={item.stock}
+            />
           </div>
+          <p></p>
           {!isItemInCart ? (
             <button
               onClick={() => {
@@ -65,7 +78,7 @@ export default function ItemDetalles() {
           )}
         </>
       ) : (
-        "No existe ese item"
+        "No existe ese item "
       )}
     </div>
   );

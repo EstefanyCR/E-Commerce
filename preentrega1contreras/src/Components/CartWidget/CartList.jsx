@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { CartContext } from "../../Context/cartContext";
-import Buyer from "../CompraFinalizar/Buyer";
+import "../CartWidget/CartList.css";
 
 function CartList() {
   const { carritoItems, clear, removeItem, getTotalPriceItems } =
@@ -15,11 +15,14 @@ function CartList() {
           {carritoItems.map(({ item, cantidad }) => {
             return (
               <div key={item.id}>
+                <p className="topCard">
+                  <img src={item.image} className="imag" alt="" />
+                  <button className="x" onClick={() => removeItem(item.id)}>
+                    x
+                  </button>
+                </p>
                 <span>
                   {item.nombre} ({cantidad})
-                </span>
-                <span>
-                  <button onClick={() => removeItem(item.id)}>x</button>
                 </span>
                 <p>${item.precio * cantidad}.00</p>
               </div>
@@ -27,7 +30,8 @@ function CartList() {
           })}
 
           <div>
-            <span>{getTotalPriceItems()}</span>
+            <span>Total de compra: ${getTotalPriceItems()}.00</span>
+            <p></p>
           </div>
 
           <button
@@ -50,7 +54,7 @@ function CartList() {
         </div>
       ) : (
         <div>
-          <p>No tienes items en tu carrito {":("}</p>
+          <p className="error">No tienes items en tu carrito {":("}</p>
 
           <button
             onClick={() => {

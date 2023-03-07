@@ -10,11 +10,11 @@ import { NavLink as RouterNavLink, Link } from "react-router-dom";
 
 export default function NavBar({ categorias }) {
   return (
-    <Navbar bg="light" expand="lg" style={{ maxHeight: "75px" }}>
-      <Container>
+    <Navbar expand="lg" className="nav">
+      <Container className="container">
         <Navbar.Brand>
           <Link to="/">
-            <img src={image} alt="Logo mixup" style={{ maxHeight: "50px" }} />
+            <img src={image} alt="Logo mixup" className="imagen" />
           </Link>
         </Navbar.Brand>
 
